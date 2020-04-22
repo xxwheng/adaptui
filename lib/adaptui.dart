@@ -28,7 +28,7 @@ class AdaptUI {
   /// 适应宽度
   /// 默认屏幕宽750
   static rpx(number) {
-    if ((_ratio is double || _ratio is int)) {
+    if (!(_ratio is double || _ratio is int)) {
       AdaptUI.init(750);
     }
     return _ratio * number;
