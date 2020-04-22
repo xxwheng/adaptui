@@ -35,7 +35,7 @@ class AdaptUI {
   }
 
   /// 返回number像素长度， 默认1px
-  static px({number=1}) {
+  static px([number=1]) {
     return number / _pixelRatio;
   }
 
