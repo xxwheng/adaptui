@@ -10,6 +10,7 @@ import 'package:flutter/material.dart';
 /// m = AdaptUI.px(n)  ### 像素尺寸 = UI尺寸 / 设备像素比 ###
 class AdaptUI {
   
+
   static MediaQueryData _mediaQueryData = MediaQueryData.fromWindow(window);
   static double _screenWidth = _mediaQueryData.size.width;
   static double _screenHeight = _mediaQueryData.size.height;
@@ -39,14 +40,19 @@ class AdaptUI {
   }
 
   /// 返回屏幕宽度
-  static screenWidth() { return _screenWidth; }
+  static double get screenWidth => _screenWidth;
+
+  // static screenWidth() { return _screenWidth; }
 
   /// 返回屏幕高度
-  static screenHeight() { return _screenHeight; }
+  static double get screenHeight => _screenHeight;
+  // static screenHeight() { return _screenHeight; }
 
   /// 返回顶部安全域高度
-  static safeATop() { return _safeAreaTop; }
+  static double get safeATop => _safeAreaTop;
+  // static safeATop() { return _safeAreaTop; }
 
   /// 返回底部安全域高度
-  static safeABot() { return _safeAreaBot; }
+  static double get safeABot => _safeAreaBot;
+  // static safeABot() { return _safeAreaBot; }
 }
